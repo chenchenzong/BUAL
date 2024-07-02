@@ -1,4 +1,4 @@
-# Bidirectional Uncertainty-Based Active Learning for Open Set Recognition
+# Official Implementation of ECCV'24 paper "Bidirectional Uncertainty-Based Active Learning for Open Set Recognition"
 
 ## 1. Requirements
 ### Environments
@@ -29,13 +29,15 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset cifar10 --init_ratio 0.01 --seed
 * --known_classes: the total number of known classes. In our experiment, we set {2, 4, 6, 8} for cifar 10, {20, 40, 60, 80} for cifar100 and {40, 80, 120, 160} for tinyimagenet.
 * --query_size: The total number of samples in a query. In our experiment, we set 1500 for cifar 10 and cifar100, 3000 for tinyimagenet.
 
-## 3. Reference
-```
-@inproceedings{kim2019nlnl,
-  title={Nlnl: Negative learning for noisy labels},
-  author={Kim, Youngdong and Yim, Junho and Yun, Juseung and Kim, Junmo},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={101--110},
-  year={2019}
+## 3. Citation
+
+If you find this repo useful for your research, please consider citing the paper.
+
+```bibtex
+@article{zong2024bidirectional,
+  title={Bidirectional Uncertainty-Based Active Learning for Open Set Annotation},
+  author={Zong, Chen-Chen and Wang, Ye-Wen and Ning, Kun-Peng and Ye, Haibo and Huang, Sheng-Jun},
+  journal={arXiv preprint arXiv:2402.15198},
+  year={2024}
 }
 ```
