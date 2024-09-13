@@ -157,7 +157,7 @@ for times in range(args.total_times):
     
     unc_net = ResNet18(len(train_classes))
     unc_net = unc_net.to(device)
-    checkpoint = torch.load('./checkpoint/ckpt_' + str(times) +'-best.pth')
+    checkpoint = torch.load('./checkpoint/ckpt_' + str(times) +'-last.pth')
     unc_net.load_state_dict(checkpoint['net'])
     idx_list, P_prob_list = test_PL(unc_net, query_loader, times, 0, device)
     
