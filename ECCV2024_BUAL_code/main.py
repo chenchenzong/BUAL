@@ -31,7 +31,7 @@ parser.add_argument('--batch_size', type=int, default=128)
 parser.add_argument('--num_workers', default=4, type=int)
 parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
 
-parser.add_argument('--init_ratio', default=0.08, type=int, help='The initial ratio of labeled data')
+parser.add_argument('--init_ratio', default=0.08, type=float, help='The initial ratio of labeled data')
 
 parser.add_argument('--type', type=int, default=1, help='Query strategies select:[1:B-LC,2:B-Margin,3:B-Entropy]')
 parser.add_argument('--seed', type=int, default=3)
