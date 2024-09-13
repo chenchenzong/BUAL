@@ -452,17 +452,16 @@ def PL_test(net, testloader, criterion, best_acc, times, epoch, logger, device =
     # Save checkpoint.
     
     acc = 100.*correct/total
-    if acc > best_acc:
-        print('Saving..')
-        state = {
-            'net': net.state_dict(),
-            'acc': acc,
-            'epoch': epoch,
-        }
-        if not os.path.isdir('checkpoint'):
-            os.mkdir('checkpoint')
-        torch.save(state, './checkpoint/ckpt_' + str(times) +'-best.pth')
-        best_acc = acc
+    print('Saving..')
+    state = {
+        'net': net.state_dict(),
+        'acc': acc,
+        'epoch': epoch,
+    }
+    if not os.path.isdir('checkpoint'):
+        os.mkdir('checkpoint')
+    torch.save(state, './checkpoint/ckpt_' + str(times) +'-last.pth')
+    best_acc = acc
      
     return best_acc
 
