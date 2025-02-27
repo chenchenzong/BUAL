@@ -13,10 +13,12 @@ Active learning (AL) in open set scenarios presents a novel challenge of identif
 If you find this repo useful for your research, please consider citing the paper.
 
 ```bibtex
-@article{zong2024bidirectional,
-  title={Bidirectional Uncertainty-Based Active Learning for Open Set Annotation},
-  author={Zong, Chen-Chen and Wang, Ye-Wen and Ning, Kun-Peng and Ye, Haibo and Huang, Sheng-Jun},
-  journal={arXiv preprint arXiv:2402.15198},
-  year={2024}
+@inproceedings{zong2024bidirectional,
+  title={Bidirectional Uncertainty-Based Active Learning for Open-Set Annotation},
+  author={Zong, Chen-Chen and Wang, Ye-Wen and Ning, Kun-Peng and Ye, Hai-Bo and Huang, Sheng-Jun},
+  booktitle={European Conference on Computer Vision},
+  pages={127--143},
+  year={2024},
+  organization={Springer}
 }
 ```
