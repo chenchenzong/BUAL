@@ -1,4 +1,4 @@
-# Official Implementation of ECCV'24 paper "Bidirectional Uncertainty-Based Active Learning for Open Set Recognition"
+# Official Implementation of ECCV'24 paper "Bidirectional Uncertainty-Based Active Learning for Open Set Annotation"
 
 by **Chen-Chen Zong, Ye-Wen Wang, Kun-Peng Ning, Hai-Bo Ye, Sheng-Jun Huang**
 
